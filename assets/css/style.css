@@ -124,6 +124,59 @@ body {
 	opacity: 0.9;
 }
 
+.skills-list {
+	list-style: none;
+	margin: 0.5rem 0 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+.skills-group {
+	margin-top: 0.75rem;
+}
+.skills-title {
+	margin: 0 0 0.35rem 0;
+	color: var(--muted);
+	font-weight: 700;
+	font-size: 0.95rem;
+}
+.skill {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	padding: 0.35rem 0.6rem;
+	border-radius: 999px;
+	border: 1px solid var(--border);
+	background: transparent;
+	color: var(--text);
+	font-weight: 600;
+}
+.skill svg {
+	width: 16px;
+	height: 16px;
+	flex: 0 0 auto;
+	display: block;
+}
+.skill img {
+	width: 16px;
+	height: 16px;
+	flex: 0 0 auto;
+	display: block;
+}
+.skill span {
+	line-height: 1.2;
+}
+
+/* Jetpack Compose pill: nudge Kotlin icon for perfect centering */
+#languages .skills-group:nth-of-type(2) .skills-list .skill:nth-child(2) img {
+	transform: translateY(1px);
+}
+.skill:hover {
+	border-color: var(--primary);
+	color: var(--primary);
+}
+
 .cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -160,6 +213,12 @@ body {
 	width: 16px;
 	height: 16px;
 	flex: 0 0 auto;
+}
+.button img {
+	width: 16px;
+	height: 16px;
+	flex: 0 0 auto;
+	display: block;
 }
 .button.secondary {
 	border-color: var(--secondary);
