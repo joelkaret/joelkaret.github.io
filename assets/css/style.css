@@ -165,12 +165,8 @@ body {
 	display: block;
 }
 .skill span {
-	line-height: 1.2;
-}
-
-/* Jetpack Compose pill: nudge Kotlin icon for perfect centering */
-#languages .skills-group:nth-of-type(2) .skills-list .skill:nth-child(2) img {
-	transform: translateY(1px);
+	line-height: 1;
+	display: inline-block;
 }
 .skill:hover {
 	border-color: var(--primary);
@@ -187,9 +183,19 @@ body {
 	border: 1px solid var(--border);
 	border-radius: 12px;
 	padding: 1rem;
+	display: flex;
+	flex-direction: column;
 }
 .card h3 {
 	margin-top: 0;
+}
+
+.card-actions {
+	margin-top: auto;
+	display: flex;
+	justify-content: flex-end;
+	gap: 0.5rem;
+	align-items: center;
 }
 
 .button {
@@ -219,6 +225,10 @@ body {
 	height: 16px;
 	flex: 0 0 auto;
 	display: block;
+}
+.button span {
+	line-height: 1;
+	display: inline-block;
 }
 .button.secondary {
 	border-color: var(--secondary);
